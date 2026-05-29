@@ -1,0 +1,22 @@
+{
+  "name": "easycode-editor-extension",
+  "displayName": "EasyCode Editor Extension",
+  "description": "A minimal VS Code extension for EasyCode backend integration.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:easycode.startChat"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vscode": "^1.80.0"
+  },
+  "dependencies": {}
+}
