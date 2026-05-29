@@ -42,7 +42,6 @@
   "keywords": ["easycode", "ai", "coding", "assistant", "vscode"],
   "devDependencies": {
     "typescript": "^5.5.0",
-    "vscode": "^1.80.0",
     "@types/node": "^20.0.0",
     "@types/vscode": "^1.80.0"
   },
