@@ -1,22 +1,50 @@
 {
-  "name": "easycode-editor-extension",
-  "displayName": "EasyCode Editor Extension",
-  "description": "A minimal VS Code extension for EasyCode backend integration.",
+  "name": "easycode",
+  "displayName": "EasyCode",
+  "publisher": "easycode",
+  "description": "A local-first AI coding assistant extension that connects VS Code to the EasyCode backend.",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.80.0"
   },
-  "activationEvents": [
-    "onCommand:easycode.startChat"
-  ],
+  "categories": ["Other", "AI", "Code Tools"],
   "main": "./out/extension.js",
+  "icon": "media/icon.svg",
+  "contributes": {
+    "commands": [
+      {
+        "command": "easycode.startChat",
+        "title": "EasyCode: Start Chat"
+      },
+      {
+        "command": "easycode.searchCode",
+        "title": "EasyCode: Search Codebase"
+      },
+      {
+        "command": "easycode.generateDiff",
+        "title": "EasyCode: Generate Diff"
+      },
+      {
+        "command": "easycode.applyDiff",
+        "title": "EasyCode: Apply Diff"
+      }
+    ]
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./tsconfig.json"
+    "compile": "tsc -p ./tsconfig.json",
+    "watch": "tsc -w -p ./tsconfig.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/easycode"
+  },
+  "keywords": ["easycode", "ai", "coding", "assistant", "vscode"],
   "devDependencies": {
     "typescript": "^5.5.0",
-    "vscode": "^1.80.0"
+    "vscode": "^1.80.0",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0"
   },
   "dependencies": {}
 }
