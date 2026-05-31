@@ -1,5 +1,6 @@
 from pathlib import Path
-from pydantic import BaseSettings
+from pathlib import Path
+from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     project_id: str = "easycode"

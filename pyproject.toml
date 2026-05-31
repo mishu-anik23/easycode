@@ -12,6 +12,7 @@ pydantic = "^2.7.0"
 requests = "^2.31.0"
 sqlalchemy = "^2.0.0"
 python-dotenv = "^1.0.0"
+pydantic-settings = "^2.7.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^8.0.0"
