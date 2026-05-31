@@ -7,6 +7,12 @@
   "engines": {
     "vscode": "^1.80.0"
   },
+  "activationEvents": [
+    "onCommand:easycode.startChat",
+    "onCommand:easycode.searchCode",
+    "onCommand:easycode.generateDiff",
+    "onCommand:easycode.applyDiff"
+  ],
   "categories": ["Other", "AI", "Code Tools"],
   "main": "./out/extension.js",
   "icon": "media/icon.svg",
