@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .api import chat, plan, diff, apply, index, search
+from .api import chat, plan, diff, apply, index, search, auth
 from .core.logging import configure_logging
 
 app = FastAPI(title="EasyCode API", version="0.1.0")
@@ -21,6 +21,7 @@ app.include_router(diff.router, prefix="/diff", tags=["diff"])
 app.include_router(apply.router, prefix="/apply", tags=["apply"])
 app.include_router(index.router, prefix="/index", tags=["index"])
 app.include_router(search.router, prefix="/search", tags=["search"])
+app.include_router(auth.router, prefix="/auth", tags=["auth"])
 
 @app.get("/")
 def root():

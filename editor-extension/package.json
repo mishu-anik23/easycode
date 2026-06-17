@@ -10,6 +10,7 @@
   "activationEvents": [
     "onCommand:easycode.startChat",
     "onCommand:easycode.searchCode",
+    "onCommand:easycode.folderSearch",
     "onCommand:easycode.generateDiff",
     "onCommand:easycode.applyDiff"
   ],
@@ -25,6 +26,10 @@
       {
         "command": "easycode.searchCode",
         "title": "EasyCode: Search Codebase"
+      },
+      {
+        "command": "easycode.folderSearch",
+        "title": "EasyCode: Search Folders (Local/Google Drive/Dropbox)"
       },
       {
         "command": "easycode.generateDiff",
